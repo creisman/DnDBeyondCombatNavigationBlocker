@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "D&D Beyond Combat Navigation Blocker",
+  "version": "1.0",
+  "description": "An extension that adds a confirmation dialog before navigating away",
+
+  "content_scripts": [{
+    "matches": ["https://www.dndbeyond.com/combat-tracker*"],
+    "js": ["combat_navigation_blocker.js"]
+  }]
+}
